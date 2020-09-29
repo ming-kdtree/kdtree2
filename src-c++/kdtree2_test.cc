@@ -67,6 +67,7 @@ void time_random_searches(kdtree2::KDTree *tree, int nn)
     {
       float sps = float(nsearch) / t;
       std::cout << "C++ impl, for nn=" << nn << " searches/sec = " << sps << "\n";
+      printf(" %.4f us\n", 1.0/sps*1000*1000);
       return;
     }
   }
